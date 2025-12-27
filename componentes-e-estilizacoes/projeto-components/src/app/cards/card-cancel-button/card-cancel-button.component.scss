@@ -1,5 +1,7 @@
+@import "variables";
+
 .card-cancel-button {
-  background-color: #f44336;
+  background-color: $bgColor;
   color: white;
   font-size: 1.2em;
   font-weight: 600;
