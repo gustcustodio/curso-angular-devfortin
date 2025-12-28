@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   styles: [
     `
       .card-cancel-button {
-        background-color: #f44336;
+        // background-color: #f44336;
         color: white;
         font-size: 1.2em;
         font-weight: 600;

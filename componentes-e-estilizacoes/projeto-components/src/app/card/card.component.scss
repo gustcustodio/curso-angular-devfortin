@@ -26,3 +26,7 @@
     font-weight: 700;
   }
 }
+
+::ng-deep app-card-cancel-button .card-cancel-button {
+  background-color: #a1944b;
+}
