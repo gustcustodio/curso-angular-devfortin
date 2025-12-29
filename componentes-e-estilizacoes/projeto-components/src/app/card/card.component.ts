@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { MatSlideToggle } from '@angular/material/slide-toggle';
 
 import { CardButtonComponent } from '../card-button/card-button.component';
@@ -19,6 +19,7 @@ interface IInfos {
   imports: [CardButtonComponent, CardCancelButtonComponent, MatSlideToggle],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss',
+  encapsulation: ViewEncapsulation.None,
 })
 export class CardComponent {
   plano: IPlano = {
