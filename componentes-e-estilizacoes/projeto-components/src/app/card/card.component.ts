@@ -19,7 +19,7 @@ interface IInfos {
   imports: [CardButtonComponent, CardCancelButtonComponent, MatSlideToggle],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss',
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.Emulated,
 })
 export class CardComponent {
   plano: IPlano = {
