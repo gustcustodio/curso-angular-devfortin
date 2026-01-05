@@ -1,4 +1,4 @@
-<input id="meu-input" [value]="inputText" [type]="inputType" [disabled]="isDisabled" />
+<input id="meu-input" [value]="inputText" [type]="inputType" [disabled]="isDisabled" (input)="handleEventInput($event)" />
 
 <br>
 

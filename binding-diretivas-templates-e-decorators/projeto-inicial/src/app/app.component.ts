@@ -32,4 +32,9 @@ export class AppComponent {
     console.log(this.inputText);
   }
 
+  handleEventInput(event: Event) {
+    const currentText = (event.target as HTMLInputElement).value;
+    console.log(currentText);
+  }
+
 }
