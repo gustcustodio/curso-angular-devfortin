@@ -1,4 +1,22 @@
-<input id="meu-input" [value]="inputText" [type]="inputType" [disabled]="isDisabled" (input)="handleEventInput($event)" />
+<button style="width: 100px; background-color: aqua;">Botão 0</button>
+<br>
+<button [style.width]="widthButton1" [style.backgroundColor]="'blue'">Botão 1</button>
+<br>
+<button [style.width.px]="widthButton2" [style.backgroundColor]="'pink'">Botão 2</button>
+<br>
+<button [style]="'width: 130px; background-color: brown;'">Botão 3</button>
+<br>
+<button [style]="{ width: '140px', backgroundColor: 'orange' }">Botão 4</button>
+<br>
+<button [style]="stylesObj">Botão 5</button>
+<br>
+<button (click)="updateStylesObj()">Atualizar obj</button>
+<br>
+<button (click)="updateStylesObjCorrect()">Atualizar obj correto</button>
+<br>
+<button (click)="updateWidth()">Atualizar width</button>
+
+<!-- <input id="meu-input" [value]="inputText" [type]="inputType" [disabled]="isDisabled" (input)="handleEventInput($event)" />
 
 <br>
 
@@ -16,12 +34,12 @@
 
 <br>
 
-<!-- exemplo com property binding -->
+* exemplo com property binding
 <p [textContent]="nome"></p>
 
-<!-- exemplo com interpolação -->
+* exemplo com interpolação
 <p>{{ nome }} (com interpolação)</p>
 
 <h3>Attribute Binding</h3>
 
-<button [attr.title]="buttonTitle">Teste</button>
+<button [attr.title]="buttonTitle">Teste</button> -->

@@ -6,6 +6,32 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  widthButton1 = '110px';
+  widthButton2 = 120;
+  stylesObj = {
+    width: '150px',
+    backgroundColor: 'grey',
+  };
+
+  updateStylesObj() {
+    console.log('Atualizando stylesObj');
+    this.stylesObj.width = '160px';
+    this.stylesObj.backgroundColor = 'green';
+  }
+
+  updateStylesObjCorrect() {
+    console.log('Atualizando stylesObj corretamente');
+    this.stylesObj = {
+      width: '170px',
+      backgroundColor: 'green',
+    };
+  }
+
+  updateWidth() {
+    this.widthButton2 = 160;
+  }
+
+  /*
   title = 'projeto-inicial';
   inputText = 'Texto via property binding';
   inputType = 'text';
@@ -37,5 +63,5 @@ export class AppComponent {
     const currentText = (event.target as HTMLInputElement).value;
     console.log(currentText);
   }
-
+  */
 }
