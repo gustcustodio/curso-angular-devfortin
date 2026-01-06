@@ -11,6 +11,7 @@ export class AppComponent {
   inputType = 'text';
   isDisabled = false;
   nome = 'Angular';
+  buttonTitle = 'Este é um botão de teste';
 
   enableInput() {
     this.isDisabled = false;
