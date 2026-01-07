@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  isRedButton = true;
+  isGreen = false;
+
+  /*
   widthButton1 = '110px';
   widthButton2 = 120;
   stylesObj = {
@@ -30,7 +34,7 @@ export class AppComponent {
   updateWidth() {
     this.widthButton2 = 160;
   }
-
+  */
   /*
   title = 'projeto-inicial';
   inputText = 'Texto via property binding';
